@@ -10,7 +10,7 @@ namespace TravelAgent.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class AdminsController : ControllerBase
     {
         private readonly IAdmin _adminRepository;

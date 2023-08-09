@@ -94,7 +94,10 @@ function ActionRestaurant() {
 
         axios
             .put(`https://localhost:7036/api/Restaurant/${editedRestaurant.restaurantId}`, updatedRestaurant, {
-                headers: { 'Content-Type': 'multipart/form-data' },
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem('token')}`, // Set the correct token
+                    'Content-Type': 'multipart/form-data'
+                },
             })
             .then((response) => {
                 console.log('Restaurant updated successfully:', response.data);
@@ -120,7 +123,12 @@ function ActionRestaurant() {
     
         // Send a DELETE request to the server to delete the selected restaurant
         axios
-            .delete(`https://localhost:7036/api/Restaurant/${selectedRestaurant.restaurantId}`)
+            .delete(`https://localhost:7036/api/Restaurant/${selectedRestaurant.restaurantId}`, {
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem('token')}`, // Set the correct token
+                    'Content-Type': 'multipart/form-data'
+                },
+            })
             .then((response) => {
                 console.log('Restaurant deleted successfully:', response.data);
                 showSnackbar('Form data Deleted successfully!', 'success');

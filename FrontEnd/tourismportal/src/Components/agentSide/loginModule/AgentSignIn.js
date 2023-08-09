@@ -27,40 +27,46 @@ export default function AgentSignIn() {
 
   const [isEmailSent, setIsEmailSent] = useState(false);
   const [openDialog, setOpenDialog] = useState(false);
+  const [otpDialogOpen, setOtpDialogOpen] = useState(false);
+  const [enteredOtp, setEnteredOtp] = useState('');
 
-  const sendEmail = async (e) => {
-    e.preventDefault();
-
-    const name = e.target.elements.name.value;
-    const email = e.target.elements.email.value;
-    const message = e.target.elements.message.value;
-
-    if (!name || !email || !message) {
-      alert('Please fill in all the fields before sending the message');
-      return;
-    }
-
+  const sendEmail = async () => {
     try {
+      if (!resetEmail) {
+        alert('Please provide a valid email address.');
+        return;
+      }
+
+      // Generate a random OTP (6-digit number)
+      const otp = Math.floor(100000 + Math.random() * 900000);
+
+      // Email template params
       const emailParams = {
         service_id: 'otp_gen',
         template_id: 'template_prwx0u4',
         user_id: 'Wp4bNYUOJ_Tk2pd9m',
         template_params: {
-          to_email: { resetEmail },
-          from_name: name,
-          from_email: email,
-          message: message,
+          to_email: resetEmail,
+          message: `Your OTP is: ${otp}`
         },
       };
 
-      await emailjs.send(
+      // Send email
+      const response = await emailjs.send(
         emailParams.service_id,
         emailParams.template_id,
         emailParams.template_params,
         emailParams.user_id
       );
 
+      console.log('Email sent successfully:', response);
       setIsEmailSent(true);
+
+      // Open the OTP confirmation dialog
+      setOtpDialogOpen(true);
+
+      // Store the generated OTP for later comparison
+      setEnteredOtp(otp);
     } catch (error) {
       console.error('Error sending email', error);
       alert('Error sending email. Please try again later.');
@@ -247,7 +253,7 @@ export default function AgentSignIn() {
                 </Button>
                 <Grid container>
                   <Grid item xs>
-                    <Link href="#" variant="body2" onClick={() => setOpenDialog(true)}>
+                    <Link href="#" variant="body2">
                       Forgot password?
                     </Link>
                   </Grid>
@@ -263,38 +269,6 @@ export default function AgentSignIn() {
         </Grid>
       </Box>
 
-      <Dialog open={openDialog} onClose={() => setOpenDialog(false)}>
-        <DialogTitle>Forgot Password</DialogTitle>
-        <DialogContent>
-          <Typography>Enter your registered email to reset your password.</Typography>
-          <TextField
-            label="Email Address"
-            fullWidth
-            margin="normal"
-            type="email"
-            autoComplete="email"
-            value={resetEmail}
-            onChange={(e) => setResetEmail(e.target.value)}
-          />
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={() => setOpenDialog(false)} color="primary">
-            Cancel
-          </Button>
-          <Button
-            onClick={(e) => {
-              e.preventDefault(); // Prevent the default form submission behavior
-              // Add logic to send password reset email or show success message using resetEmail
-              setResetEmail('');
-              sendEmail(e); // Pass the event object to the sendEmail function
-              setOpenDialog(false);
-            }}
-            color="primary"
-          >
-            Reset Password
-          </Button>
-        </DialogActions>
-      </Dialog>
       <Snackbar open={snackbarOpen} autoHideDuration={6000} onClose={handleSnackbarClose}>
         <MuiAlert elevation={6} variant="filled" onClose={handleSnackbarClose} severity={snackbarSeverity}>
           {snackbarMessage}

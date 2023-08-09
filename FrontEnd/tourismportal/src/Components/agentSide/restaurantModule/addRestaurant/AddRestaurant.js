@@ -69,18 +69,7 @@ function AddRestaurant() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (
-            !formData.restaurantName ||
-            !formData.restaurantLocation ||
-            !formData.restaurantSubLocation ||
-            !formData.restaurantPincode ||
-            !formData.restaurantContact ||
-            !formData.place.placeId ||
-            !formData.restaurantImage
-        ) {
-            showSnackbar('Please fill all the required fields and upload an image.', 'error');
-            return;
-        }
+        
 
         console.log(formData);
 
@@ -97,7 +86,8 @@ function AddRestaurant() {
         // Perform form submission using Axios POST request
         axios
             .post('https://localhost:7036/api/Restaurant', data, {
-                headers: { 'Content-Type': 'multipart/form-data' }, // Set the correct content type
+                headers: { 
+                    Authorization: `Bearer ${localStorage.getItem('token')}` },
             })
             .then((response) => {
                 console.log('Form data submitted successfully:', response.data);

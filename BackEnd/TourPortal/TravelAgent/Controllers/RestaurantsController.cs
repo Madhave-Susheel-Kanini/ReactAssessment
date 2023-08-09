@@ -24,21 +24,36 @@ namespace TravelAgent.Controllers
 
         // GET: api/Restaurant
         [HttpGet]
-        public IEnumerable<Restaurant> Get()
+        public ActionResult<IEnumerable<Restaurant>> Get()
         {
-            return _restaurantRepository.GetRestaurant();
+            try
+            {
+                var restaurants = _restaurantRepository.GetRestaurant();
+                return Ok(restaurants);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing the request.");
+            }
         }
 
         // GET: api/Restaurant/5
         [HttpGet("{id}")]
         public ActionResult<Restaurant> Get(int id)
         {
-            var restaurant = _restaurantRepository.GetRestaurantsById(id);
-            if (restaurant == null)
+            try
             {
-                return NotFound();
+                var restaurant = _restaurantRepository.GetRestaurantsById(id);
+                if (restaurant == null)
+                {
+                    return NotFound();
+                }
+                return Ok(restaurant);
             }
-            return restaurant;
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing the request.");
+            }
         }
 
         // POST: api/Restaurant
@@ -69,12 +84,20 @@ namespace TravelAgent.Controllers
             try
             {
                 var updatedRestaurant = await _restaurantRepository.PutRestaurant(id, restaurant, imageFile);
+                if (updatedRestaurant == null)
+                {
+                    return NotFound();
+                }
                 return Ok(updatedRestaurant);
             }
             catch (ArgumentException ex)
             {
                 ModelState.AddModelError("", ex.Message);
                 return BadRequest(ModelState);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing the request.");
             }
         }
 
@@ -83,12 +106,19 @@ namespace TravelAgent.Controllers
         [HttpDelete("{id}")]
         public ActionResult<Restaurant> Delete(int id)
         {
-            var restaurant = _restaurantRepository.DeleteRestaurant(id);
-            if (restaurant == null)
+            try
             {
-                return NotFound();
+                var restaurant = _restaurantRepository.DeleteRestaurant(id);
+                if (restaurant == null)
+                {
+                    return NotFound();
+                }
+                return Ok(restaurant);
             }
-            return restaurant;
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing the request.");
+            }
         }
     }
 }

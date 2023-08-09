@@ -97,6 +97,7 @@ const AddNewTourism = () => {
         e.preventDefault();
 
         console.log(formData);
+        console.log(userId)
 
         const data = new FormData();
         data.append('placeName', formData.placeName);
@@ -117,7 +118,10 @@ const AddNewTourism = () => {
         // Perform form submission using Axios POST request
         axios
             .post('https://localhost:7036/api/Places', data, {
-                headers: { 'Content-Type': 'multipart/form-data' }, // Set the correct content type
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem('token')}`, // Set the correct token
+                    'Content-Type': 'multipart/form-data'
+                },
             })
             .then((response) => {
                 console.log('Form data submitted successfully:', response.data);
@@ -128,7 +132,7 @@ const AddNewTourism = () => {
             })
             .catch((error) => {
                 console.error('Error submitting form data:', error);
-                showSnackbar('Error submitting form data', 'success');
+                showSnackbar('Error submitting form data', 'error');
                 // Handle error if needed
             });
     };

@@ -10,9 +10,11 @@ import { Container } from "@mui/material";
 import MobileStepper from '@mui/material/MobileStepper';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import React from "react";
+import React, { useState } from "react";
 import { useTheme } from '@mui/material/styles';
 import axios from "axios";
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 
 export default function AgentSignUp() {
 

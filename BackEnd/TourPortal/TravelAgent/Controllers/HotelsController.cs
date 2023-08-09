@@ -28,35 +28,54 @@ namespace TravelAgent.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Hotel>> GetHotel()
         {
-            var myHotel = _hotelRepository.GetHotel();
-            if (myHotel != null)
-                return Ok(myHotel);
-            return BadRequest((new { ErrorMessage = "No Hotels are Existing" }));
+            try
+            {
+                var myHotel = _hotelRepository.GetHotel();
+                if (myHotel != null)
+                    return Ok(myHotel);
+                return BadRequest(new { ErrorMessage = "No Hotels are Existing" });
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                return StatusCode(500, new { ErrorMessage = "An error occurred while processing the request" });
+            }
         }
 
-        // GET: api/Hotel/5
         [HttpGet("{id}")]
         public ActionResult<Hotel> GetById(int id)
         {
-            var hotel = _hotelRepository.GetHotelsById(id);
-            if (hotel != null)
-                return Ok(hotel);
-            return NotFound((new { ErrorMessage = "Hotel not found" }));
-          
+            try
+            {
+                var hotel = _hotelRepository.GetHotelsById(id);
+                if (hotel != null)
+                    return Ok(hotel);
+                return NotFound(new { ErrorMessage = "Hotel not found" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { ErrorMessage = "An error occurred while processing the request" });
+            }
         }
 
-        // POST: api/Hotel
         [Authorize(Roles = "Agent")]
         [HttpPost]
         public async Task<ActionResult<Hotel>> Post([FromForm] Hotel hotel, IFormFile imageFile)
         {
-            if (hotel == null)
-                return BadRequest((new { ErrorMessage = "Invalid Hotel data" }));
+            try
+            {
+                if (hotel == null)
+                    return BadRequest(new { ErrorMessage = "Invalid Hotel data" });
 
-            var createdHotel = await _hotelRepository.PostHotel(hotel, imageFile);
-            if (createdHotel != null)
-                return Ok(createdHotel);
-            return StatusCode(500, (new { ErrorMessage = "Hotel creation failed" }));
+                var createdHotel = await _hotelRepository.PostHotel(hotel, imageFile);
+                if (createdHotel != null)
+                    return Ok(createdHotel);
+                return StatusCode(500, new { ErrorMessage = "Hotel creation failed" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { ErrorMessage = "An error occurred while processing the request" });
+            }
         }
 
         // PUT: api/Hotel/5

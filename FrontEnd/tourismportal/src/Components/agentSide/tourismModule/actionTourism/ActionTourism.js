@@ -110,9 +110,14 @@ function ActionTourism() {
             updatedDestination.imageFile = selectedImage;
         }
 
+        const tokenkey = console.log(localStorage.getItem('token'))
+
         axios
             .put(`https://localhost:7036/api/Places/${editedDestination.placeId}`, updatedDestination, {
-                headers: { 'Content-Type': 'multipart/form-data' },
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem('token')}`, // Set the correct token
+                    'Content-Type': 'multipart/form-data'
+                },
             })
             .then((response) => {
                 console.log('Destination updated successfully:', response.data);
@@ -136,7 +141,10 @@ function ActionTourism() {
     
         // Send a DELETE request to the server to delete the selected destination
         axios
-            .delete(`https://localhost:7036/api/Places/${selectedDestination.placeId}`)
+            .delete(`https://localhost:7036/api/Places/${selectedDestination.placeId}`, {
+                headers: { 
+                    Authorization: `Bearer ${localStorage.getItem('token')}` },
+            })
             .then((response) => {
                 console.log('Destination deleted successfully:', response.data);
                 showSnackbar('Form data Deleted successfully!', 'success');

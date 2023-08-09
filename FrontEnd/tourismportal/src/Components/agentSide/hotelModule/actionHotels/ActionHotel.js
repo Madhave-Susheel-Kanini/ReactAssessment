@@ -100,7 +100,10 @@ function ActionHotel() {
 
         axios
             .put(`https://localhost:7036/api/Hotels/${editedHotel.hotelId}`, updatedHotel, {
-                headers: { 'Content-Type': 'multipart/form-data' },
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem('token')}`, // Set the correct token
+                    'Content-Type': 'multipart/form-data'
+                },
             })
             .then((response) => {
                 console.log('Hotel updated successfully:', response.data);
@@ -125,7 +128,12 @@ function ActionHotel() {
 
         // Send a DELETE request to the server to delete the selected hotel
         axios
-            .delete(`https://localhost:7036/api/Hotels/${selectedHotel.hotelId}`)
+            .delete(`https://localhost:7036/api/Hotels/${selectedHotel.hotelId}`, {
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem('token')}`, // Set the correct token
+                    'Content-Type': 'multipart/form-data'
+                },
+            })
             .then((response) => {
                 console.log('Hotel deleted successfully:', response.data);
                 showSnackbar('Hotel Deleted successfully!', 'success');

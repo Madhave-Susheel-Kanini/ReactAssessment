@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V1f+zqeoxCpQnmBI6pQL/Tm4UTM5AJXlZ+cU/LD3+FE=",
+  "Hash": "/s5wxMU3I/a8c7QB0BxQPUAii14ULgqSJEUWGfs66EA=",
   "Source": "TravelAgent",
   "BasePath": "_content/TravelAgent",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\hotel\\0876ba30-29da-476a-b076-0a342d2389e3.webp"
+    },
+    {
+      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\hotel\\257492ac-3271-4cbb-8324-30008a7b919f.jpg",
+      "SourceId": "TravelAgent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
+      "BasePath": "_content/TravelAgent",
+      "RelativePath": "uploads/hotel/257492ac-3271-4cbb-8324-30008a7b919f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\hotel\\257492ac-3271-4cbb-8324-30008a7b919f.jpg"
     },
     {
       "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\hotel\\2a15f8d2-0abc-4d10-9c50-c043e2d40a3c.avif",
@@ -238,12 +255,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\hotel\\e6994fc8-a81f-450b-ac54-4b52eba1399e.jpg"
     },
     {
-      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\06f2e324-0c96-4cc6-ba3a-082224f3303f.jpg",
+      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\hotel\\e7441281-aa0e-4a58-8b4d-cfd6b33d9c85.jpg",
       "SourceId": "TravelAgent",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
       "BasePath": "_content/TravelAgent",
-      "RelativePath": "uploads/place/06f2e324-0c96-4cc6-ba3a-082224f3303f.jpg",
+      "RelativePath": "uploads/hotel/e7441281-aa0e-4a58-8b4d-cfd6b33d9c85.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -252,7 +269,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\place\\06f2e324-0c96-4cc6-ba3a-082224f3303f.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\hotel\\e7441281-aa0e-4a58-8b4d-cfd6b33d9c85.jpg"
     },
     {
       "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\0c5c724a-878a-4388-95c6-effec27cc500.jpg",
@@ -323,6 +340,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\place\\24c0b9a2-2456-4c4c-8ece-cb24695957ff.jpg"
     },
     {
+      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\2e419bfc-d307-45f1-8cfe-ce64e8195f39.jpg",
+      "SourceId": "TravelAgent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
+      "BasePath": "_content/TravelAgent",
+      "RelativePath": "uploads/place/2e419bfc-d307-45f1-8cfe-ce64e8195f39.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\place\\2e419bfc-d307-45f1-8cfe-ce64e8195f39.jpg"
+    },
+    {
       "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\2e63f075-2f13-4d94-8c46-cc02618256c4.png",
       "SourceId": "TravelAgent",
       "SourceType": "Discovered",
@@ -357,23 +391,6 @@
       "OriginalItemSpec": "wwwroot\\uploads\\place\\37bd8ab7-f78d-4be1-a970-10a0085b48ea.jpg"
     },
     {
-      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\37d49321-2247-46ec-be6d-88ce7b894fab.jpg",
-      "SourceId": "TravelAgent",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
-      "BasePath": "_content/TravelAgent",
-      "RelativePath": "uploads/place/37d49321-2247-46ec-be6d-88ce7b894fab.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\place\\37d49321-2247-46ec-be6d-88ce7b894fab.jpg"
-    },
-    {
       "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\4468f3bd-06f0-4f4f-b2d4-79ac5e88526a.jpg",
       "SourceId": "TravelAgent",
       "SourceType": "Discovered",
@@ -391,6 +408,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\place\\4468f3bd-06f0-4f4f-b2d4-79ac5e88526a.jpg"
     },
     {
+      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\486ad0ce-998b-4c70-8bda-151578229113.jpg",
+      "SourceId": "TravelAgent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
+      "BasePath": "_content/TravelAgent",
+      "RelativePath": "uploads/place/486ad0ce-998b-4c70-8bda-151578229113.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\place\\486ad0ce-998b-4c70-8bda-151578229113.jpg"
+    },
+    {
       "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\4bbc9dea-3d31-41e7-8fab-5e90ccf64dfb.jpeg",
       "SourceId": "TravelAgent",
       "SourceType": "Discovered",
@@ -406,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\place\\4bbc9dea-3d31-41e7-8fab-5e90ccf64dfb.jpeg"
+    },
+    {
+      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\555a62f2-ec3f-4fe4-933b-2bd27cca3862.jpg",
+      "SourceId": "TravelAgent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
+      "BasePath": "_content/TravelAgent",
+      "RelativePath": "uploads/place/555a62f2-ec3f-4fe4-933b-2bd27cca3862.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\place\\555a62f2-ec3f-4fe4-933b-2bd27cca3862.jpg"
     },
     {
       "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\71a858be-3e4b-4649-8c15-230b821831a5.jpg",
@@ -510,6 +561,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\place\\98b1495e-6ee9-48cf-8b0c-5c14d5857fea.jpg"
     },
     {
+      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\ac12ec02-b7d7-41ca-bbc9-06d863ad3c57.jpg",
+      "SourceId": "TravelAgent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
+      "BasePath": "_content/TravelAgent",
+      "RelativePath": "uploads/place/ac12ec02-b7d7-41ca-bbc9-06d863ad3c57.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\place\\ac12ec02-b7d7-41ca-bbc9-06d863ad3c57.jpg"
+    },
+    {
       "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\acefca7a-8620-44da-afd8-80d90036cbe2.jpg",
       "SourceId": "TravelAgent",
       "SourceType": "Discovered",
@@ -525,6 +593,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\place\\acefca7a-8620-44da-afd8-80d90036cbe2.jpg"
+    },
+    {
+      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\b9e65144-62fe-4b19-96d5-87859245ac39.jpg",
+      "SourceId": "TravelAgent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
+      "BasePath": "_content/TravelAgent",
+      "RelativePath": "uploads/place/b9e65144-62fe-4b19-96d5-87859245ac39.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\place\\b9e65144-62fe-4b19-96d5-87859245ac39.jpg"
     },
     {
       "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\c5eb7195-8ac8-41e3-8792-43f836e83f1f.png",
@@ -559,40 +644,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\place\\d5ca93f0-899b-4526-9183-bf1a5e281235.jpg"
-    },
-    {
-      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\dd9e843d-2585-4e9d-945e-0388ac45ebbd.jpg",
-      "SourceId": "TravelAgent",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
-      "BasePath": "_content/TravelAgent",
-      "RelativePath": "uploads/place/dd9e843d-2585-4e9d-945e-0388ac45ebbd.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\place\\dd9e843d-2585-4e9d-945e-0388ac45ebbd.jpg"
-    },
-    {
-      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\place\\f2f8f002-f324-45f7-981f-e201f6d1c3d7.jpg",
-      "SourceId": "TravelAgent",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
-      "BasePath": "_content/TravelAgent",
-      "RelativePath": "uploads/place/f2f8f002-f324-45f7-981f-e201f6d1c3d7.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\place\\f2f8f002-f324-45f7-981f-e201f6d1c3d7.jpg"
     },
     {
       "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\restaurant\\0c80586d-a8f0-47e9-ab76-da21067cbbdb.jpg",
@@ -678,6 +729,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\restaurant\\83ea985d-19f8-4d93-95a5-560ef64f141c.webp"
+    },
+    {
+      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\restaurant\\86228769-3dda-4f46-a1d1-3347d2b242a4.jpg",
+      "SourceId": "TravelAgent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
+      "BasePath": "_content/TravelAgent",
+      "RelativePath": "uploads/restaurant/86228769-3dda-4f46-a1d1-3347d2b242a4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\restaurant\\86228769-3dda-4f46-a1d1-3347d2b242a4.jpg"
+    },
+    {
+      "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\restaurant\\a2afe2f3-618e-420c-a509-e1af3be75d66.jpg",
+      "SourceId": "TravelAgent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\",
+      "BasePath": "_content/TravelAgent",
+      "RelativePath": "uploads/restaurant/a2afe2f3-618e-420c-a509-e1af3be75d66.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\restaurant\\a2afe2f3-618e-420c-a509-e1af3be75d66.jpg"
     },
     {
       "Identity": "C:\\Kanini Software Solutions\\ReactAssessment (GitHub)\\BackEnd\\TourPortal\\TravelAgent\\wwwroot\\uploads\\restaurant\\ef25b40a-532a-4e28-bb4f-74a424bc293e.jpg",
